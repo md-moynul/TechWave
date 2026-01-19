@@ -14,7 +14,13 @@
 .display-flex {
     display: flex;
 }
-
+.display-grid{
+    display: grid;
+}
+.margin-max-width{
+    margin: 0 auto;
+    max-width: 1600px;
+}
 .btn {
     padding: 0.75rem 1rem;
     border: none;
@@ -23,18 +29,31 @@
     color: #FFFFFF;
     font-weight: 600;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 44px;
 }
-
+#b-mass{
+    background: none;
+    border: 1px solid #00FF88;
+}
+#b-mass:hover{
+    background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1)));
+    border: none;
+}
 .btn:hover {
     background: rgba(145, 0, 248, 1);
+}
+main{
+    /* background-color: #1A0B2E; */
 }
 
 /* main style */
 /* header section */
-header {
+.header-continer {
     padding: 1rem 12.5rem;
     background-color: #1A0B2E;
-    max-width: 1600px;
 }
 
 .hamburger-menu {
@@ -46,7 +65,7 @@ header {
     align-items: center;
 }
 
-.nav-bar h1 {
+.nav-bar h3 {
     font-size: 2.5rem;
     color: #FFFFFF;
     font-weight: 600;
@@ -66,8 +85,58 @@ header {
     color: #FFFFFF;
 }
 
-
-
+/* Hero Section */
+.hero{
+    padding: 6.30rem 0;
+    background: url(../assets/hero-bg.png);
+    background-repeat: no-repeat;
+    /* background-size: 100% ,100%; */
+}
+.hero-continer{
+    max-width: 32.8rem;
+    margin: 0 auto;
+    gap: 2.5rem;
+    position: relative;
+    place-items: center;
+    text-align: center;
+}
+.hero-continer .microphone{
+    position: absolute;
+    top: 4.35rem;
+    left: 13rem;
+}
+.hero-continer .new{
+    background-color: #00FF88;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1A0B2E;
+    box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
+    position: absolute;
+    top: 20px;
+    right: 100px;
+}
+.hero-content-button{
+    gap: 24px;
+}
+.hero-content{
+    gap: 8px;
+}
+.hero-content h1{
+    font-size: 60px;
+    font-weight: 800;
+    color: #FFFFFF;
+}
+.hero-content p{
+    color: #FFFFFF;
+    white-space: nowrap;
+}
+.hero-button{
+    place-items: center;
+    justify-content: center;
+    gap: 8px;
+}
 
 
 /* Respnsive design */
@@ -85,5 +154,18 @@ header {
     .hamburger-menu {
         display: inline;
     }
+    /* hearo section */
+    .hero{
+        background-size: cover;
+    }
+    .hero-continer{
+        max-width: 27.5rem;
+    }
+    .hero-circle{
+        max-width: 200px;
+    }
 
+    .hero-content p{
+    white-space: wrap;
+}
 }
