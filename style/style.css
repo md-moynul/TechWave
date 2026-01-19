@@ -8,6 +8,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* Sheared style */
@@ -17,8 +18,10 @@
 .display-grid{
     display: grid;
 }
-.margin-max-width{
+.margin-auto{
     margin: 0 auto;
+}
+.max-width{
     max-width: 1600px;
 }
 .btn {
@@ -46,7 +49,12 @@
     background: rgba(145, 0, 248, 1);
 }
 main{
-    /* background-color: #1A0B2E; */
+    background-color: #1A0B2E;
+}
+.headding{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
 }
 
 /* main style */
@@ -137,6 +145,40 @@ main{
     justify-content: center;
     gap: 8px;
 }
+/* podcast Section */
+.podcast-continer{
+    max-width: 1200px;
+}
+.podcast-continer hr{
+    color: #FFFFFF;
+    opacity: 0.1;
+}
+.podcast-content{
+    color: #FFFFFF;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.podcast-continer p{
+    line-height: 20px;
+}
+.podcast-card-continer{
+    margin-top: 40px;
+    color: #FFFFFF;
+    text-align: center;
+    grid-template-columns: repeat(4,240px);
+    gap: 80px;
+}
+.podcast-card h3{
+    color: #00FF88;
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 16px;
+}
+.podcast-card p{
+    line-height: 20px;
+}
+
 
 
 /* Respnsive design */
