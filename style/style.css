@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Sheared style */
+.display-flex {
+    display: flex;
+}
+
+.btn {
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 20px;
+    background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1)));
+    color: #FFFFFF;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: rgba(145, 0, 248, 1);
+}
+
+/* main style */
+/* header section */
+header {
+    padding: 1rem 12.5rem;
+    background-color: #1A0B2E;
+    max-width: 1600px;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.nav-bar {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar h1 {
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.nav-bar span {
+    color: rgba(251, 9, 180, 1);
+}
+
+.nav-bar ul {
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-bar ul a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+
+
+
+/* Respnsive design */
+@media screen and (max-width:576px) {
+    /* Header section */
+    header {
+        padding: 1rem 1.25rem;
+    }
+
+    .nav-bar ul,
+    .nav-bar .nav-button {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: inline;
+    }
+
+}
