@@ -120,9 +120,11 @@ main,footer {
 /* Hero Section */
 .hero {
     padding: 6.30rem 0;
-    background: url(../assets/hero-bg.png);
+    background-image: url(../assets/hero-bg.png);
+    background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
-    /* background-size: 100% ,100%; */
+    width: 100%;
 }
 
 .hero-continer {
@@ -179,7 +181,7 @@ main,footer {
 /* podcast Section */
 .podcast-continer {
     max-width: 1200px;
-    margin-bottom: 200px;
+    padding-bottom: 200px;
 }
 
 .podcast-continer hr {
@@ -187,9 +189,9 @@ main,footer {
 }
 
 .podcast-content {
-    margin-top: 20px;
+    padding-top: 20px;
     text-align: center;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
 }
 
 .podcast-continer p {
@@ -325,6 +327,14 @@ main,footer {
     border-radius: 50%;
 }
 /* footer section  */
+footer{
+    background-image: url(../assets/footer-bg.png);
+    background-size: cover;
+    background-position:center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    width: 100%;
+}
 .footer{
     max-width: 1360px;
     padding: 120px 0;
