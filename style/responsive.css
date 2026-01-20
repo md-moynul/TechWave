@@ -147,7 +147,7 @@
     }
     .footer-icons {
         gap: 16px;
-        grid-template-columns: repeat(2, auto);
-
+        width: 255px;
+        flex-wrap: wrap;
     }
 }
