@@ -15,15 +15,19 @@
 .display-flex {
     display: flex;
 }
-.display-grid{
+
+.display-grid {
     display: grid;
 }
-.margin-auto{
+
+.margin-auto {
     margin: 0 auto;
 }
-.max-width{
+
+.max-width {
     max-width: 1600px;
 }
+
 .btn {
     padding: 0.75rem 1rem;
     border: none;
@@ -37,24 +41,30 @@
     gap: 8px;
     height: 44px;
 }
-#b-mass{
+
+#b-mass {
     background: none;
     border: 1px solid #00FF88;
 }
-#b-mass:hover{
+
+#b-mass:hover {
     background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1)));
     border: none;
 }
+
 .btn:hover {
     background: rgba(145, 0, 248, 1);
 }
-main{
+
+main {
     background-color: #1A0B2E;
 }
-.headding{
+
+.headding {
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 /* main style */
@@ -94,13 +104,14 @@ main{
 }
 
 /* Hero Section */
-.hero{
+.hero {
     padding: 6.30rem 0;
     background: url(../assets/hero-bg.png);
     background-repeat: no-repeat;
     /* background-size: 100% ,100%; */
 }
-.hero-continer{
+
+.hero-continer {
     max-width: 32.8rem;
     margin: 0 auto;
     gap: 2.5rem;
@@ -108,12 +119,14 @@ main{
     place-items: center;
     text-align: center;
 }
-.hero-continer .microphone{
+
+.hero-continer .microphone {
     position: absolute;
     top: 4.35rem;
     left: 13rem;
 }
-.hero-continer .new{
+
+.hero-continer .new {
     background-color: #00FF88;
     padding: 0.5rem 1rem;
     border-radius: 20px;
@@ -125,66 +138,122 @@ main{
     top: 20px;
     right: 100px;
 }
-.hero-content-button{
+
+.hero-content-button {
     gap: 24px;
 }
-.hero-content{
+
+.hero-content {
     gap: 8px;
 }
-.hero-content h1{
+
+.hero-content h1 {
     font-size: 60px;
     font-weight: 800;
     color: #FFFFFF;
 }
-.hero-content p{
+
+.hero-content p {
     color: #FFFFFF;
     white-space: nowrap;
 }
-.hero-button{
+
+.hero-button {
     place-items: center;
     justify-content: center;
     gap: 8px;
 }
+
 /* podcast Section */
-.podcast-continer{
+.podcast-continer {
     max-width: 1200px;
 }
-.podcast-continer hr{
+
+.podcast-continer hr {
     color: #FFFFFF;
     opacity: 0.1;
 }
-.podcast-content{
+
+.podcast-content {
     color: #FFFFFF;
     margin-top: 20px;
     text-align: center;
     margin-bottom: 40px;
 }
-.podcast-continer p{
+
+.podcast-continer p {
     line-height: 20px;
 }
-.podcast-card-continer{
+
+.podcast-card-continer {
     margin-top: 40px;
     color: #FFFFFF;
     text-align: center;
-    grid-template-columns: repeat(4,240px);
+    grid-template-columns: repeat(4, 240px);
     gap: 80px;
 }
-.podcast-card h3{
+
+.podcast-card h3 {
     color: #00FF88;
     font-size: 3rem;
     font-weight: 900;
     margin-bottom: 16px;
 }
-.podcast-card p{
+
+.podcast-card p {
     line-height: 20px;
 }
 
+/* choose Scetion */
+.choose {
+    background-color: #230E3D;
+    color: #FFFFFF;
+    padding: 120px 200px;
+}
 
+.choose-card-continer {
+    margin-top: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+}
+.choose-card {
+    padding: 40px;
+    box-shadow: 0px 3px 27px 0px rgba(53, 17, 101, 0.4);
+    border-radius: 40px;
+    background-color: #351165;
+    display: flex;
+    align-items: center;
+}
+
+.Audio{
+    grid-row: span 2;
+}
+.device{
+    grid-column: span 2;
+}
+.location{
+    grid-column: span 2;
+}
+.interviews{
+    grid-column: span 2;
+}
+.choose-card img{
+    margin-bottom: 16px;
+}
+.choose-card h3{
+    font-size: 24px;
+    font-weight: 700px;
+    margin-bottom: 16px;
+}
+.choose-card p {
+    line-height: 24px;
+}
 
 /* Respnsive design */
 @media screen and (max-width:576px) {
     /* Header section */
-    header {
+    header{
         padding: 1rem 1.25rem;
     }
 
@@ -197,17 +266,19 @@ main{
         display: inline;
     }
     /* hearo section */
-    .hero{
+    .hero {
         background-size: cover;
     }
-    .hero-continer{
+
+    .hero-continer {
         max-width: 27.5rem;
     }
-    .hero-circle{
+
+    .hero-circle {
         max-width: 200px;
     }
 
-    .hero-content p{
-    white-space: wrap;
-}
+    .hero-content p {
+        white-space: wrap;
+    }
 }
