@@ -212,7 +212,7 @@ main,footer {
 .podcast-card-continer {
     margin-top: 40px;
     text-align: center;
-    grid-template-columns: repeat(4, 240px);
+    grid-template-columns: repeat(4, 1fr);
     gap: 80px;
 }
 
@@ -274,7 +274,6 @@ main,footer {
 /* Episodes-host */
 .Episodes-host{
     gap: 120px;
-    max-width: 1200px;
     padding: 120px 0;
 }
 .Episodes-card-continer{
@@ -285,9 +284,11 @@ main,footer {
 .Episodes-card {
     background-color: #351165;
     border-radius: 24px;
+    width: 100%;
 }
 .Episodes-card iframe{
     border-radius: 24px;
+    height: 100%;
 }
 .Episodes-content{
     padding: 24px;
