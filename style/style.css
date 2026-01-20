@@ -75,6 +75,9 @@ main,footer {
 .section-width{
     max-width: 1200px;
 }
+.hidden{
+    display: none;
+}
 
 /* main style */
 /* header section */
@@ -133,8 +136,8 @@ main,footer {
 
 .hero-continer .microphone {
     position: absolute;
-    top: 4.35rem;
-    left: 13rem;
+    top:12%;
+    left: 40%;
 }
 
 .hero-continer .new {
@@ -146,8 +149,8 @@ main,footer {
     color: #1A0B2E;
     box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
     position: absolute;
-    top: 20px;
-    right: 100px;
+    top: 3%;
+    right: 19%;
 }
 
 .hero-content-button {
@@ -340,37 +343,4 @@ main,footer {
 .copywrite p{
     text-align: center;
     line-height: 24px;
-}
-
-/* Respnsive design */
-@media screen and (max-width:576px) {
-    /* Header section */
-    header{
-        padding: 1rem 1.25rem;
-    }
-
-    .nav-bar ul,
-    .nav-bar .nav-button {
-        display: none;
-    }
-
-    .hamburger-menu {
-        display: inline;
-    }
-    /* hearo section */
-    .hero {
-        background-size: cover;
-    }
-
-    .hero-continer {
-        max-width: 27.5rem;
-    }
-
-    .hero-circle {
-        max-width: 200px;
-    }
-
-    .hero-content p {
-        white-space: wrap;
-    }
 }

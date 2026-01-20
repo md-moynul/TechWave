@@ -1,0 +1,48 @@
+@media screen and (max-width:576px) {
+
+    /* Header section */
+    .header-continer {
+        padding: 1rem 1.25rem;
+    }
+
+    .nav-bar ul,
+    .nav-bar .nav-button {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: inline;
+    }
+
+    /* hearo section */
+    .hero {
+        background-size: cover;
+    }
+
+    .hero-continer {
+        max-width: 27.5rem;
+    }
+
+    .hero-circle {
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+.hero-continer .microphone { 
+    max-width: 80px;
+    max-height: 80px;
+    top: 15%;
+    left: 44%
+}
+.hero-continer .new{
+    font-size: 16px;
+    top: 2%;
+    right: 20%;
+}
+.hero-content h1 {
+    font-size: 40px;
+}
+    .hero-content p {
+        white-space: wrap;
+    }
+}
