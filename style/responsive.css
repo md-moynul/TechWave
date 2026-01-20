@@ -103,15 +103,14 @@
     }
 
     .Episodes-card-continer {
-        grid-template-columns: repeat(1, 400px);
+        grid-template-columns: repeat(1, 1fr);
         gap: 16px;
         margin-top: 24px;
         justify-content: center;
     }
 
     .Episodes-card-continer iframe {
-        width: 400px;
-        height: 225px;
+        width: 100%;
     }
 
     .Episodes-content h3 {
@@ -139,16 +138,16 @@
 
     /* footer section */
     footer{
-       background-size: cover; 
+        background-image: url(../assets/footer-bg2.png);
+       
     }
     .footer{
         padding: 40px 20px;
+        max-width: 400px;
     }
     .footer-icons {
         gap: 16px;
         grid-template-columns: repeat(2, auto);
 
     }
-
-
 }
