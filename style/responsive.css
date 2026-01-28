@@ -1,3 +1,9 @@
+@media screen and (max-width:1210px) {
+    .Episodes-card-continer {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
 @media screen and (max-width:576px) {
 
     .br-none {
@@ -47,7 +53,7 @@
     .hero-continer .new {
         font-size: 16px;
         top: 2%;
-        right: 19%;
+        right:23%;
     }
 
     .hero-content h1 {
@@ -137,14 +143,16 @@
     }
 
     /* footer section */
-    footer{
+    footer {
         background-image: url(../assets/footer-bg2.png);
-       
+
     }
-    .footer{
+
+    .footer {
         padding: 40px 20px;
         max-width: 400px;
     }
+
     .footer-icons {
         gap: 16px;
         width: 255px;

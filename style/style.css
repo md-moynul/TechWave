@@ -69,6 +69,12 @@ p{
     background: rgba(145, 0, 248, 1);
 }
 
+.choose-card:hover,
+.Episodes-card:hover,
+.host-card:hover {
+    box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
+    transform: scale(1.015);
+}
 main,footer {
     background-color: #1A0B2E;
 }
@@ -246,6 +252,7 @@ main,footer {
     background-color: #351165;
     display: flex;
     align-items: center;
+    transition: transform 0.5s;
 }
 
 .Audio{
@@ -274,6 +281,7 @@ main,footer {
 /* Episodes-host */
 .Episodes-host{
     gap: 120px;
+    max-width: 1200px;
     padding: 120px 0;
 }
 .Episodes-card-continer{
@@ -284,11 +292,10 @@ main,footer {
 .Episodes-card {
     background-color: #351165;
     border-radius: 24px;
-    width: 100%;
+    transition: transform 0.5s;
 }
 .Episodes-card iframe{
     border-radius: 24px;
-    height: 100%;
 }
 .Episodes-content{
     padding: 24px;
@@ -318,6 +325,7 @@ main,footer {
     border-radius: 40px;
     gap: 24px;
     align-items: center;
+    transition: transform 0.5s;
 }
 .host-content{
     gap: 16px;
