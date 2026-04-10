@@ -38,8 +38,6 @@ Explore the live project here:
 | :--- | :--- |
 | **HTML5** | Semantic structure |
 | **CSS3** | Layout and animations |
-| **Tailwind CSS** | Rapid utility-first styling |
-| **JavaScript** | Dynamic UI logic |
 | **Git & GitHub** | Version control and deployment |
 
 ---
